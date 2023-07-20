@@ -95,7 +95,7 @@ nav {
     
     padding-bottom:30rem;
     position:relative;
-    border: solid 0.5rem var(--logo-dark-blue);
+    /* border: solid 0.5rem var(--logo-dark-blue); */
     border-radius: 1rem;
     left: 3rem;
 

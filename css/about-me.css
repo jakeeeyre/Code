@@ -115,14 +115,12 @@ h1 {
 
 .image-wrapper {
     margin-left: 3rem;
-    margin-top: 1rem;
 }
 
 .image-wrapper > img {
     width: 35rem;
     height: 48rem;
     border-radius: 1rem;
-    border: solid 0.5rem var(--logo-dark-blue);
     object-fit: cover;
 }
 

@@ -138,7 +138,6 @@ h2 {
     width: 35rem;
     height: 35rem;
     border-radius: 1rem;
-    border: solid 0.5rem var(--logo-dark-blue);
     object-fit: cover;
 }
 
