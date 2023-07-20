@@ -17,7 +17,7 @@ body {
 
 .header-wrapper {
     background-size: cover;
-    background-image: url("./webpage images/homepage-image-compressed.jpg");
+    background-image: url("./webpage images/homepage-image-compressed-min.jpg");
     height: 55rem;
     min-width: 75rem;
     border-bottom: solid 10px var(--logo-dark-blue);
@@ -175,22 +175,22 @@ nav {
 }
 
 #massage-therapy {
-    background-image: url("./webpage images/clinical-massage-therapy-compressed.jpg");
+    background-image: url("./webpage images/clinical-massage-therapy-compressed-min.jpg");
     background-size: cover;
 }
 
 #scar-work {
-    background-image: url("./webpage images/scar-work-compressed.jpg");
+    background-image: url("./webpage images/scar-work-compressed-min.jpg");
     background-size: cover;
 }
 
 #oncology-massage {
-    background-image: url("./webpage images/oncology-compressed.jpg");
+    background-image: url("./webpage images/oncology-compressed-min.jpg");
     background-size: cover;
 }
 
 #tmj-therapy {
-    background-image: url("./webpage images/tmj-therapy-compressed.jpg");
+    background-image: url("./webpage images/tmj-therapy-compressed-min.jpg");
     background-size: cover;
 }
 /*call to action section*/
