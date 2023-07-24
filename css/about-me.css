@@ -40,13 +40,14 @@ nav {
     display: flex;
     margin-left: 5rem;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight:900;
     padding: 1.5rem  0rem 1.5rem 0rem; 
 }
 .nav-option {
     opacity: 65%;
     margin-right: 5rem;
+    white-space: nowrap;
 }
 
 .nav-option > a {
@@ -71,6 +72,7 @@ nav {
     border-radius: 1rem;
     transition: ease-in-out 200ms;
     text-decoration: none;
+    white-space: nowrap;
 
 }
 

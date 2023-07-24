@@ -1,28 +1,53 @@
-const people = [
-    { firstName: 'Benjamin', lastName: 'Franklin', yearOfDeath: 1790 },
-    { firstName: 'Thomas', lastName: 'Edison', yearOfDeath: 1931 },
-    { firstName: 'Franklin', lastName: 'Roosevelt', yearOfDeath: 1945 },
-    { firstName: 'Napolean', lastName: 'Bonaparte', yearOfDeath: 1821 },
-    { firstName: 'Abraham', lastName: 'Lincoln', yearOfDeath: 1865 },
-    { firstName: 'Mother', lastName: 'Theresa', yearOfDeath: 1962 },
-    { firstName: 'Mahatma', lastName: 'Gandhi', yearOfDeath: 1948 },
-    { firstName: 'Winston', lastName: 'Churchill', yearOfDeath: 1965 },
-    { firstName: 'Charles', lastName: 'Darwin', yearOfDeath: 1882 },
-    { firstName: 'Albert', lastName: 'Einstein', yearOfDeath: 1955 },
-    { firstName: 'Pablo', lastName: 'Picasso', yearOfDeath: 1973 },
-    { firstName: 'Ludwig', lastName: 'Beethoven', yearOfDeath: 1827 },
-    { firstName: 'Walt', lastName: 'Disney', yearOfDeath: 1966 },
-    { firstName: 'Henry', lastName: 'Ford', yearOfDeath: 1947 },
-    { firstName: 'Steve', lastName: 'Jobs', yearOfDeath: 2012 },
-  ]
+const prevButton = document.querySelector('#left-button')
+const nextButton = document.querySelector('#right-button')
+const carousel = document.querySelector('.carousel')
+const carouselTrack = document.querySelector('.carousel-contents')
+const carouselSlides = Array.from(carouselTrack.children)
 
+carouselSlides.forEach((slide, index) => {
 
-let darwinIndex = -1
-
-people.forEach((person, index) => {
-if (person.firstName === 'Charles' && person.lastName === 'Darwin') {
-    darwinIndex = index
-}
+    const widthOfSlide = carouselSlides[0].getBoundingClientRect().width
+    slide.style.left = (widthOfSlide * index) + 'px'
 })
 
-console.log(darwinIndex)
+
+
+nextButton.addEventListener('click', event => {
+    const currentSlide = carouselTrack.querySelector('.is-selected')
+    const nextSlide = currentSlide.nextElementSibling
+    const destination = nextSlide.style.left
+    const currentDot = carousel.querySelector('.current-dot')
+    const nextDot = currentDot.nextElementSibling
+    
+    carouselTrack.style.transform = 'translate(-' + destination + ')'
+
+    currentSlide.classList.remove('is-selected')
+    nextSlide.classList.add('is-selected')
+    currentDot.classList.remove('current-dot')
+    nextDot.classList.add('current-dot')
+    prevButton.style.opacity = 1
+
+    if(!nextSlide.nextElementSibling) {
+        nextButton.style.opacity = 0
+    }
+})
+
+prevButton.addEventListener('click', event => {
+    const currentSlide = carouselTrack.querySelector('.is-selected')
+    const prevSlide = currentSlide.previousElementSibling
+    const destination = prevSlide.style.left
+    const currentDot = carousel.querySelector('.current-dot')
+    const prevDot = currentDot.previousElementSibling
+    
+    carouselTrack.style.transform = 'translate(-' + destination + ')'
+
+    currentSlide.classList.remove('is-selected')
+    prevSlide.classList.add('is-selected')
+    currentDot.classList.remove('current-dot')
+    prevDot.classList.add('current-dot')
+    nextButton.style.opacity = 1
+
+    if(!prevSlide.previousElementSibling) {
+        prevButton.style.opacity = 0
+    }
+})
