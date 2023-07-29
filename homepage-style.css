@@ -11,6 +11,7 @@
 
 body {
     font-family: 'PT Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 /*nav section*/
@@ -19,7 +20,6 @@ body {
     background-size: cover;
     background-image: url("./webpage images/homepage-image-compressed-min.jpg");
     height: 55rem;
-    min-width: 75rem;
     border-bottom: solid 10px var(--logo-dark-blue);
 }
 
@@ -32,7 +32,6 @@ body {
 
 .logo-wrapper > img {
     width: 15rem;
-    margin-left: 3rem;
     background-color: #ffffff99;
     border-bottom-right-radius: 15%;
     border-bottom-left-radius: 15%;
@@ -48,7 +47,7 @@ nav {
 }
 .nav-option {
     opacity: 65%;
-    margin-right: 5rem;
+    margin-right: 3rem;
     white-space: nowrap;
 }
 
@@ -85,12 +84,47 @@ nav {
     cursor: pointer;
 }
 
+/* sidebar nav */
 
+#side-bar, #side-bar-close {
+    width: 2rem;
+    opacity: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    display: none;
+}
+
+#side-bar-menu {
+    background-color: #ffffff99;
+    padding: 2rem 4rem ;
+    z-index: 1;
+    position: absolute;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    top: 6rem;
+    right: 0;
+    backdrop-filter: blur(500px);
+    line-height: 4rem;
+    backdrop-filter: blur(10px);
+    transform: translate(16rem);
+    transition: ease 300ms;
+}
+
+#side-bar-menu > ul {
+    list-style: none;
+}
+
+#side-bar-menu > ul > li > a {
+    text-decoration: none;
+    color: #00000090;
+    font-size: 1.4rem;
+}
 /*homepage section*/
 .statement-wrapper {
     display: flex;
     justify-content: flex-end;
-    min-width: 70rem;
 }
 .statement {
     background-color: #e5e5e599;

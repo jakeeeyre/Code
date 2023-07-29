@@ -1,0 +1,114 @@
+/* header */
+@media only screen and (max-width: 1210px) {
+    .nav-option {
+        display: none;
+    }
+    #side-bar {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .statement > h1 {
+        font-size: 2.2rem;
+        padding-bottom: 1rem;
+        color: var(--logo-dark-blue);
+    }
+    .statement_paragraph {
+        padding: 0.5rem;
+        opacity: 65%;
+        font-size: 1.2rem;
+    }
+    #cta-button {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .statement {
+         margin: 0rem 3rem;
+    }
+    .statement_paragraph {
+        padding: 0.5rem;
+        opacity: 65%;
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media only screen and (max-width: 455px) {
+    
+    .statement > h1 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        color: var(--logo-dark-blue);
+    }
+    .statement_paragraph {
+        padding: 0.5rem;
+        opacity: 65%;
+        font-size: 1rem;
+    }
+    .nav-bar-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+
+    .logo-wrapper > img {
+        width: 10rem;
+    }
+
+    .header-wrapper {
+        background-position-x: -4rem;
+        background-position-y: -4rem;
+        height: 50rem;
+        /* min-width: 90rem; */
+        border-bottom: solid 10px var(--logo-dark-blue);
+    }
+}
+
+/* main page */
+
+@media only screen and (max-width: 1000px) {
+    .statement {
+        width: fit-content;
+        top: 5rem;
+    }
+    .treatment-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .treatment {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .learn-more_button {
+        padding: 0.5rem 0rem;
+        font-size: 0.8rem ;
+    }
+    .treatment > p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .introduction {
+        max-width:fit-content;
+    }
+}
+
+/*footer */
+
+@media only screen and (max-width: 575px) {
+    footer {
+        justify-content: center;
+    }
+    footer > .text_paragraph {
+        display: none;
+    }
+    #social-media-logos {
+        margin-right: 0;
+    }
+}
