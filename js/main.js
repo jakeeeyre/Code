@@ -6,6 +6,8 @@ const mediaQuery = window.matchMedia("(min-width: 1210px)")
 
 sideBarIcon.addEventListener('click', () => {
 
+
+    sideBarMenu.style.display = 'absolute'
     sideBarMenu.style.transform = 'translate(0rem)'
     sideBarIcon.style.display = 'none'
     sideBarClose.style.display = 'block'
@@ -14,6 +16,7 @@ sideBarIcon.addEventListener('click', () => {
 sideBarClose.addEventListener('click', () => {
 
     sideBarMenu.style.transform = 'translate(16rem)'
+    sideBarMenu.style.display = 'none'
     sideBarIcon.style.display = 'block'
     sideBarClose.style.display = 'none'
 
