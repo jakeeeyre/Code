@@ -6,17 +6,15 @@ const mediaQuery = window.matchMedia("(min-width: 1210px)")
 
 sideBarIcon.addEventListener('click', () => {
 
-
-    sideBarMenu.style.display = 'absolute'
     sideBarMenu.style.transform = 'translate(0rem)'
     sideBarIcon.style.display = 'none'
     sideBarClose.style.display = 'block'
+
 })
 
 sideBarClose.addEventListener('click', () => {
 
     sideBarMenu.style.transform = 'translate(16rem)'
-    sideBarMenu.style.display = 'none'
     sideBarIcon.style.display = 'block'
     sideBarClose.style.display = 'none'
 
@@ -27,11 +25,10 @@ const handleMediaQueryChange = (mediaQuery) => {
       // Hide sidebar icons when the screen width is greater than 1210px
       sideBarIcon.style.display = 'none';
       sideBarClose.style.display = 'none';
-      sideBarMenu.style.display = 'none'
+      //sideBarMenu.style.display = 'none'
     } else {
       // Show sidebar icons when the screen width is less than or equal to 1210px
       sideBarIcon.style.display = 'block';
-      sideBarMenu.style.display = 'block';
       sideBarMenu.style.transform = 'translate(16rem)'
 
     }
