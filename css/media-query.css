@@ -67,7 +67,7 @@
         border-bottom: solid 10px var(--logo-dark-blue);
     }
     #side-bar-menu {
-        background-color: #ffffff;
+        backdrop-filter: blur(30px);
     }
 }
 

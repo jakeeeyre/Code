@@ -53,6 +53,9 @@
     .image-wrapper > img {
         width: 30rem;
     }
+    #side-bar-menu {
+        backdrop-filter: blur(30px);
+    }
 }
 
 /* footer */
