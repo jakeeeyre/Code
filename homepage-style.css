@@ -14,10 +14,7 @@ html, body {
     overflow-x: hidden;
 }
 
-#overflow {
-    overflow: hidden;
-    position: absolute;
-}
+
 /*nav section*/
 
 .header-wrapper {
