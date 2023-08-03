@@ -12,6 +12,7 @@
 html, body {
     font-family: 'PT Sans', sans-serif;
     overflow-x: hidden;
+    position: relative;
 }
 
 
@@ -22,6 +23,7 @@ html, body {
     background-image: url("./webpage images/homepage-image-compressed-min.jpg");
     height: 55rem;
     border-bottom: solid 10px var(--logo-dark-blue);
+    overflow-x: hidden;
 }
 
 .nav-bar-logo {
