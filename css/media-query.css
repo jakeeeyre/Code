@@ -66,6 +66,9 @@
         /* min-width: 90rem; */
         border-bottom: solid 10px var(--logo-dark-blue);
     }
+    #side-bar-menu {
+        background-color: #ffffff;
+    }
 }
 
 /* main page */
