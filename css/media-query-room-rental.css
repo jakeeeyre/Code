@@ -57,11 +57,12 @@
     }
     .carousel-button {
         top: 12rem;
-        width: 1.2rem;
+        width: 2rem;
         height: 3rem;
+        left:0.2rem;
     }
     #right-button {
-        left:22.33rem;
+        left:20.5rem;
     }
     .grid {
         margin: auto;
@@ -83,6 +84,7 @@
     }
     #side-bar-menu {
         backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
     }
 
 /* footer */
@@ -112,18 +114,4 @@
         width: 10rem;
     }
     
-}
-
-/* footer */
-
-@media only screen and (max-width: 770px) {
-    footer {
-        justify-content: center;
-    }
-    footer > .text_paragraph {
-        display: none;
-    }
-    #social-media-logos {
-        margin-right: 0;
-    }
 }
