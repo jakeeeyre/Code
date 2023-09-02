@@ -18,7 +18,6 @@ html, body {
 
 /*nav section*/
 
-
 .nav-bar-logo {
     display: flex;
     justify-content: space-between;
@@ -130,15 +129,6 @@ h1 {
     word-spacing: 1.5rem;
 }
 
-.introduction {
-    text-align:justify;
-    max-width: 65vw;
-    margin: 3rem auto 0rem auto;
-    opacity: 65%;
-    font-size: 1.2rem;
-    line-height: 2rem;
-}
-
 h2 {
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -147,30 +137,16 @@ h2 {
     letter-spacing: 0.3rem;
 }
 
-.grid {
+.directory_entry_grid {
     display: grid;
     align-items:center;
     justify-content: space-between;
+    justify-items: center;
     grid-template-columns: 1fr 1fr;
-    margin: 4rem 4rem 4rem 4rem;
+    margin: 4rem 4rem 8rem 4rem;
 }
 
-.text_paragraph {
-    opacity: 65%;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    margin: 1.5rem;
-}
 
-.service-information {
-    min-width: 35rem;
-    text-align: justify;
-}
-
-.right-side {
-    display: flex;
-    justify-content: flex-end;
-}
 .image-wrapper > img {
     width: 35rem;
     height: 35rem;
@@ -178,37 +154,21 @@ h2 {
     object-fit: cover;
 }
 
-.cta-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 10%;
-    margin: 1rem auto 0rem auto;
-    padding: 0.5rem 3rem;
-    background-color: var(--logo-dark-blue);
-    color: var(--text-white);
-    text-transform: uppercase;
+.directory_link {
+    color: var(--logo-dark-blue);
     text-decoration: none;
-    font-size: 1.2rem ;
-    border-radius: 1rem;
-    transition: ease-in-out 200ms;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
 }
 
-#clinical-massage-link-location,
-#scarwork-link-location,
-#oncology-massage-link-location,
-#tmj-therapy-link-location {
-    visibility: hidden;
-}
-
-.hidden-image {
-
-    width: 35rem;
-    height: 35rem;
-    border-radius: 1rem;
-    object-fit: cover;
-    display: none;
+.text_paragraph {
+    opacity: 65%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 1.5rem;
 }
 
 /* footer */
