@@ -6,8 +6,8 @@
     height: 100%;
     z-index: 999999;
     pointer-events: none;
-    background: white;
-    animation-duration: 700ms;
+    background: #fffafa;
+    animation-duration: 1000ms;
     animation-timing-function: ease-in-out;
 }    
 
