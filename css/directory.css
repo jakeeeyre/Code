@@ -59,7 +59,7 @@ nav {
 .nav-option > a {
     text-decoration: none;
     color: #fff;
-    text-shadow: 1px 1px #000;
+    text-shadow: 2px 1px #000;
 }
 
 .nav-option > a:hover {

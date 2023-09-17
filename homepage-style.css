@@ -46,10 +46,11 @@ nav {
     display: flex;
     margin-left: 5rem;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight:900;
     padding: 1.5rem  0rem 1.5rem 0rem; 
 }
+
 .nav-option {
     opacity: 65%;
     margin-right: 3rem;
@@ -58,7 +59,8 @@ nav {
 
 .nav-option > a {
     text-decoration: none;
-    color: #000000
+    color: #fff;
+    text-shadow: 2px 1px #000;
 }
 
 .nav-option > a:hover {
