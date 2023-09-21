@@ -20,7 +20,7 @@ html, body {
 
 .header-wrapper {
     background-size: cover;
-    background-image: url("../webpage images/background images/IMG_2523-min.jpg");
+    background-image: url("../webpage images/background images/contact-homepage.jpg");
     height: 55rem;
     border-bottom: solid 10px var(--logo-dark-blue);
     overflow-x: hidden;
