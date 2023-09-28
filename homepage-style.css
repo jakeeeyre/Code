@@ -96,7 +96,6 @@ nav {
 #side-bar, #side-bar-close {
     width: 2rem;
     opacity: 65%;
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 3rem;

@@ -168,6 +168,19 @@ h2 {
     object-fit: cover;
 }
 
+.hidden-image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden-image {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 1rem;
+    object-fit: cover;
+    display: none;
+}
+
 .directory_link {
     color: var(--logo-dark-blue);
     text-decoration: none;

@@ -5,15 +5,22 @@
     #side-bar {
         display: flex;
     }
-    .grid {
+    .directory_entry_grid {
         display: block;
-    }
-    .hidden-image {
-        display: block;
-        width: 100%;
+        border-bottom: 10px var(--logo-dark-blue) solid;
+        padding-bottom: 2rem;
     }
     .image-wrapper {
         display: none;
+    }
+    .hidden-image {
+        display: block;
+    }
+    .text_paragraph {
+        text-align: justify;
+    }
+    .directory_link {
+        text-align: center;
     }
 }
 
@@ -21,42 +28,29 @@
     #cta-button {
         display: none;
     }
-    
-    h1, h2 {
-        margin-top: 2rem;
-    }
-    .grid {
-        margin: auto;
-    }
-    .introduction {
-        max-width: 90vw;
-    }
-    #page-title {
-        margin-top: 8rem;
-    }
     .header-wrapper {
         height: 50rem;
     }
-}
-
-@media only screen and (max-width: 660px) {
-    #page-title {
-        font-size: 4rem;
+    .directory_entry_grid {
+        margin: auto;
+    }
+    h2 {
+        margin-top: 2rem;
     }
 }
 
-@media only screen and (max-width: 580px) {
-    .service-information {
-        min-width: auto;
-    }
-    .hidden-image {
-        height: 20rem;
-    }
+@media only screen and (max-width: 550px) {
     #page-title {
         font-size: 3rem;
     }
+    h2 {
+        margin-bottom: 2rem;
+    }
+    .hidden-image {
+        height: 25rem;
+        width: 25rem;
+    }    
 }
-
 @media only screen and (max-width: 455px) {
     .nav-bar-logo {
         display: flex;
@@ -64,19 +58,25 @@
         align-items:flex-start;
         padding: 0rem 1rem 0rem 1rem;
     }
+
     .logo-wrapper > img {
         width: 10rem;
     }
     #side-bar-menu {
         backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
     }
     #page-title {
         font-size: 2rem;
+        letter-spacing: 0.5rem;
     }
     .header-wrapper {
         height: 30rem;
     }
-    
+    .directory_link {
+        margin: 0;
+        letter-spacing: normal;
+    }
 }
 
 /* footer */
@@ -91,4 +91,19 @@
     #social-media-logos {
         margin-right: 0;
     }
+}
+
+
+@media only screen and (max-width: 455px) {
+    .nav-bar-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+
+    .logo-wrapper > img {
+        width: 10rem;
+    }
+    
 }

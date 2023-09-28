@@ -1,5 +1,5 @@
 /* header */
-@media only screen and (max-width: 1210px) {
+@media only screen and (max-width: 1350px) {
     .nav-option {
         display: none;
     }
@@ -63,7 +63,6 @@
         background-position-x: -4rem;
         background-position-y: -4rem;
         height: 50rem;
-        /* min-width: 90rem; */
         border-bottom: solid 10px var(--logo-dark-blue);
     }
     #side-bar-menu {

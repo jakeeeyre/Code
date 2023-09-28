@@ -1,5 +1,5 @@
 
-@media only screen and (max-width: 1210px) {
+@media only screen and (max-width: 1350px) {
     .nav-option {
         display: none;
     }
@@ -35,9 +35,26 @@
         text-align: justify;
     }
     h1 {
-        margin-top: 2rem;
+        margin-top: 8rem;
+    }
+    .header-wrapper {
+        height: 50rem;
+        background-position-x: -10rem;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    
+    .header-wrapper {
+        height: 50rem;
+        background-position-x: -20rem;
+    }
+    #page-title {
+        font-size: 4rem;
+        letter-spacing: 0.5rem;
+    }
+}
+
 
 @media only screen and (max-width: 455px) {
     .nav-bar-logo {
@@ -46,7 +63,6 @@
         align-items:flex-start;
         padding: 0rem 1rem 0rem 1rem;
     }
-
     .logo-wrapper > img {
         width: 10rem;
     }
@@ -55,6 +71,14 @@
     }
     #side-bar-menu {
         backdrop-filter: blur(30px);
+    }
+    .header-wrapper {
+        height: 30rem;
+        background-position-x: -10rem;
+    }
+    #page-title {
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
     }
 }
 

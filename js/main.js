@@ -2,7 +2,7 @@
 const sideBarIcon = document.querySelector('#side-bar')
 const sideBarMenu = document.querySelector('#side-bar-menu')
 const sideBarClose = document.querySelector('#side-bar-close')
-const mediaQuery = window.matchMedia("(min-width: 1210px)")
+const mediaQuery = window.matchMedia("(min-width: 1350px)")
 
 sideBarIcon.addEventListener('click', () => {
 
