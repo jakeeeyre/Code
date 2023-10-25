@@ -16,7 +16,11 @@ html, body {
     width: 100%;
 }
 
-
+.privacy {
+    text-align: center;
+    line-height: 2rem;
+    margin: 5rem;
+}
 /*nav section*/
 
 .header-wrapper {
